@@ -1,0 +1,181 @@
+/* =========================
+   PALETA CIENTÍFICA ALEGRE
+   Menta + Amarelo Suave
+   ========================= */
+:root {
+  /* Gradientes de fundo */
+  --bg-gradient-dark: linear-gradient(
+    135deg,
+    #6ee7b7,   /* menta */
+    #fde68a    /* amarelo suave */
+  );
+
+  --bg-gradient-light: linear-gradient(
+    135deg,
+    #ecfdf5,
+    #fffbea
+  );
+
+  /* Cards */
+  --card-bg-dark: rgba(255, 255, 255, 0.35);
+  --card-bg-light: #ffffff;
+
+  /* Texto */
+  --text-dark: #064e3b;
+  --text-light: #064e3b;
+
+  /* Molduras e acentos */
+  --border-color: rgba(6, 78, 59, 0.25);
+  --accent: #059669;     /* verde menta forte */
+  --accent-2: #ca8a04;   /* amarelo queimado elegante */
+
+  --radius: 18px;
+  --transition: 0.35s ease;
+}
+
+/* =========================
+   BASE
+   ========================= */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* =========================
+   FUNDOS (GRADIENTE)
+   ========================= */
+body[data-theme="dark"] {
+  background: var(--bg-gradient-dark);
+  color: var(--text-dark);
+}
+
+body[data-theme="light"] {
+  background: var(--bg-gradient-light);
+  color: var(--text-light);
+}
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+header {
+  text-align: center;
+  padding: 56px 20px 36px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* =========================
+   GRID DE APPS
+   ========================= */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+/* =========================
+   CARD COM MOLDURA
+   ========================= */
+.app-card {
+  background: var(--card-bg-dark);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  padding: 22px;
+  border: 2px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+body[data-theme="light"] .app-card {
+  background: var(--card-bg-light);
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(6, 78, 59, 0.25);
+}
+
+/* =========================
+   ÍCONE DO APP (IconApp)
+   ========================= */
+.app-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  border: 2px solid var(--border-color);
+  background: white;
+}
+
+/* =========================
+   TÍTULO DO APP
+   ========================= */
+.app-card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* =========================
+   DESCRIÇÃO
+   ========================= */
+.description {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+/* =========================
+   TAGS (METADADOS)
+   ========================= */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tags span {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+}
+
+/* =========================
+   LINK
+   ========================= */
+.app-card a {
+  margin-top: auto;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--accent);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.app-card a:hover {
+  color: var(--accent-2);
+  transform: translateX(4px);
+}
