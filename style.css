@@ -37,12 +37,11 @@ p.subtitulo {
 /* ===== CARD ===== */
 .card {
     margin: 0 auto;
-    text-align: center;
-    width: 180px;  
+    text-align: center;  
 }
 
 .card img {
-    width: 160px;   /* ajuste aqui */
+    width: 180px;   /* ajuste aqui */
     height: auto;
     display: block;
     margin: 0 auto 20px auto; /* centraliza */
