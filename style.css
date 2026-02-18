@@ -37,23 +37,30 @@
    BASE
    ========================= */
 body {
-  margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
-  min-height: 100vh;
-  transition: background var(--transition), color var(--transition);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px; /* aumenta o tamanho base */
+    line-height: 1.6;
 }
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+background: linear-gradient(120deg, #a8f0dc, #ffe88a);
+
 
 /* =========================
    FUNDOS (GRADIENTE)
    ========================= */
-body[data-theme="dark"] {
-  background: var(--bg-gradient-dark);
-  color: var(--text-dark);
-}
-
-body[data-theme="light"] {
-  background: var(--bg-gradient-light);
-  color: var(--text-light);
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(135deg, #b7f5d4, #fff6b7);
 }
 
 /* =========================
