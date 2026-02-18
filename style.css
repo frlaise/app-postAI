@@ -33,7 +33,7 @@ p.subtitulo {
     max-width: 600px;
 
 
-.app-card a:hover {
+.card a:hover {
   color: var(--accent-2);
   transform: translateX(4px);
 }
