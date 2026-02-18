@@ -54,3 +54,24 @@ p.subtitulo {
   color: var(--accent-2);
   transform: translateX(4px);
 }
+
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #d62828;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* efeito ao passar o mouse */
+.botao:hover {
+    background: #9d0208;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
