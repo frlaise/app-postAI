@@ -30,7 +30,17 @@ p.subtitulo {
 
 /* ===== CARD ===== */
 .card {
-    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card img {
+    width: 180px;   /* ajuste aqui */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* centraliza */
+}
+
 
 
 .card a:hover {
