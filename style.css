@@ -38,7 +38,7 @@
    ========================= */
 body {
     font-family: 'Segoe UI', sans-serif;
-    font-size: 20px; /* aumenta o tamanho base */
+    font-size: 30px; /* aumenta o tamanho base */
     line-height: 1.6;
 }
 
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 38px;
 }
 
 background: linear-gradient(120deg, #a8f0dc, #ffe88a);
@@ -59,9 +59,10 @@ background: linear-gradient(120deg, #a8f0dc, #ffe88a);
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 20px;
-    background: linear-gradient(135deg, #b7f5d4, #fff6b7);
+    background: linear-gradient(135deg, #b9fbc0, #ffe66d);
 }
+
+
 
 /* =========================
    CABEÇALHO
@@ -98,6 +99,21 @@ header h1 {
 /* =========================
    CARD COM MOLDURA
    ========================= */
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #4ecdc4;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
 .app-card {
   background: var(--card-bg-dark);
   backdrop-filter: blur(10px);
