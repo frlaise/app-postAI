@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
     line-height: 1.6;
-    background: linear-gradient(135deg, #ff4d4d, #ffd60a);
+    background: linear-gradient(135deg, #ffd60a, #ff4d4d);
     color: #3a0a0a;
     padding: 40px;
     text-align: center; /* centraliza tudo */
@@ -21,17 +21,29 @@ h1 {
     font-size: 48px;
     margin-bottom: 10px;
     letter-spacing: 1px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
     font-size: 38px;
     margin-bottom: 10px;
     letter-spacing: 1px;
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
 }
 
-p.subtitulo {
+h3 {
+font-size: 30px;
+color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+p{
     font-size: 22px;
     margin-bottom: 50px;
+    color:#d62828;
 }
 
 /* ===== CARD ===== */
@@ -73,4 +85,3 @@ p.subtitulo {
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
-
